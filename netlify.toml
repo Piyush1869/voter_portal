@@ -1,0 +1,4 @@
+[[redirects]]
+  from = "/*"
+  to = "/voter_form.html"
+  status = 301
