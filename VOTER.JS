@@ -5,7 +5,7 @@ function openWindow() {
   let nameInput = form.elements["name"].value.toUpperCase();
   let nameInLocalInput = form.elements["name in hindi"].value;
   let imageInput = form.elements["image"].value;
-  let epicInput = form.elements["epic"].value.toUpperCase();
+  let epicInput = form.elements["epic"].value;
   let addressInput = form.elements["address in english"].value;
   let addressInputHindi = form.elements["address in hindi"].value;
   let constituent_assembly_eng = form.elements["C_A_N"].value;
@@ -108,7 +108,7 @@ function openWindow() {
   }
  
 main.bg {
-    font-family: 'Mangal', Arial; /* use Mangal as the primary font, and fall back to Arial if Mangal is not available */
+    font-family: 'Mangal'; /* use Mangal as the primary font, and fall back to Arial if Mangal is not available */
 font-weight: 600;
 }
          
@@ -268,7 +268,13 @@ font-weight: 600;
     .header, .hide { visibility: hidden }
     form.bootom-form{display:none;}
     }
-        </style></head><body>
+        </style>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind" rel="stylesheet">
+    <link href="aadhar.css" type="text/css" rel="stylesheet">
+        
+        
+        </head><body>
     <main class="bg">
             <div class="row ml-5  mt-5" id="content-area" style="margin-left:100px;">
                      <div class="firstpage">
