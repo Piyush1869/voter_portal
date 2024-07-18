@@ -8,8 +8,8 @@ function openWindow() {
   let epicInput = form.elements["epic"].value.toUpperCase();
   let addressInput = form.elements["address in english"].value;
   let addressInputHindi = form.elements["address in hindi"].value;
-//   let genderInput = form.elements["gender"].value;
-//   let genderInputHindi = form.elements["gender in local"].value;
+  let constituent_assembly_eng = form.elements["C_A_N"].value;
+  let constituent_assembly_hin = form.elements["C_A_N_H"].value;
   // let date = Date.now()
   let relationInputs = form.elements["relation"];
   let selectedRelation;
@@ -344,11 +344,11 @@ font-weight: 600;
                         <div class="assemballysankhya">
                           <div class="regional">
                             <span class="label">विधानसभा निर्वाचन क्षेत्र संख्या एवं नाम : </span>
-                            <span class="value"><br>32-गिरिडीह</span>
+                            <span class="value"><br>${constituent_assembly_hin}</span>
                            </div>
     
                            <div class="actual">Assembly Constituency No. &amp; Name : 
-                            <span class="value"><br>32 - Giridih</span>
+                            <span class="value"><br>${constituent_assembly_eng}</span>
                            </div>
                         </div>  
     
