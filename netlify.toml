@@ -1,4 +1,4 @@
 [ [redirects] ]
 from = "/*"
-to = "/index.html"
+to = "voter_Form.html"
 status = 200
