@@ -42,7 +42,7 @@ function openWindow() {
   let date_of_birth = form.elements["date_of_birth"].value;
     var output = "";
 
-    output = ` 
+    output = `
     <style>
         .firstpage {
         background-image: url(voterhindifront1.jpg);
@@ -70,10 +70,10 @@ function openWindow() {
         width: 320px;
         float: none;
         position: relative;
-    }
-        </style>
+}
+    
         
-        <style>
+       
         @font-face {
     font-family: 'Mangal';
     src: url('./MANGAL.TTF'); /* assuming the font file is in a folder named "font" in the same directory as your CSS file */
