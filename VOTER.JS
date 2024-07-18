@@ -5,7 +5,7 @@ function openWindow() {
   let nameInput = form.elements["name"].value.toUpperCase();
   let nameInLocalInput = form.elements["name in hindi"].value;
   let imageInput = form.elements["image"].value;
-  let epicInput = form.elements["epic"].value;
+  let epicInput = form.elements["epic"].value.toUpperCase();
   let addressInput = form.elements["address in english"].value;
   let addressInputHindi = form.elements["address in hindi"].value;
   let constituent_assembly_eng = form.elements["C_A_N"].value;
