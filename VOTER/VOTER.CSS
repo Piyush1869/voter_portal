@@ -1,0 +1,196 @@
+
+.firstpage {
+background-image: url(voterhindifront1.jpg);
+height: 500px;
+background-size: contain;
+background-repeat: no-repeat;
+margin-right: 30px;
+width: 320px;
+float: none;
+border-radius:10px;
+border:3px dotted black;
+position: relative;
+font-size: 14px;
+margin-bottom: 20px;
+    
+}
+.secondpage {
+background-image: url(voterhindiback4.jpg);
+height: 500px;
+background-size: contain;
+background-repeat: no-repeat;
+margin-right: 30px;
+border-radius:10px;
+border:3px dotted black;
+width: 320px;
+float: none;
+position: relative;
+}
+
+
+
+@font-face {
+    font-family: 'Mangal';
+    src: url('./MANGAL.TTF'); /* assuming the font file is in a folder named "font" in the same directory as your CSS file */
+  }
+ 
+main.bg {
+    font-family: 'Mangal', Arial; /* use Mangal as the primary font, and fall back to Arial if Mangal is not available */
+font-weight: 600;
+}
+
+ 
+
+.secondpage {
+font-size: 9px;
+font-weight: 600;
+box-sizing: border-box;
+padding: 14px;
+}
+.gender span.label,.dob span.label {
+width: 116px;
+display: inline-block;
+}
+
+.imagecontainer {
+position: absolute;
+top: 123px;
+left: 91px;
+}
+
+img.picture {
+width: 140px;
+height: 186px;
+}
+
+img.barcode {
+width: 101px;
+height: 23px;
+position: absolute;
+top: 85px;
+left: 61px;
+
+}
+
+.epicnumber {
+position: absolute;
+top: 82px;
+left: 175px;
+}
+
+.settable {
+position: absolute;
+top: 331px;
+left: 25px;
+
+}
+
+.tablecss {
+font-family:arial;
+font-size:14px;
+font-weight:bold;
+
+}
+
+.r_name {
+position: absolute;
+top: 331px;
+left: 25px;
+}
+
+.actual_name {
+position: absolute;
+left: 25px;
+top: 363px;
+}
+
+.father_name {
+position: absolute;
+left: 25px;
+top: 395px;
+}
+
+.father_name_actual {
+position: absolute;
+left: 25px;
+top: 427px;
+}
+
+.gender span.value {
+text-transform: capitalize;
+}
+
+.secondpage .gender {
+margin-bottom: 4px;
+}
+
+.secondpage .dob {
+position: relative;
+margin-bottom: 4px;
+}
+
+.secondpage .dob span.value {
+top: -5px;
+position: relative;
+}
+
+.address_regional {
+margin-bottom: 5px;
+}
+
+.address {
+margin-bottom: 60px;
+}
+
+.nirvachan .date {
+width: 100px;
+float: left;
+}
+
+.nirvachan .nirvachanofficer {
+float: right;
+width: 160px;
+text-align: right;
+position: relative;
+}
+
+img.officersign {
+position: absolute;
+top: -69px;
+left: 20px;
+}
+
+.nirvachan:before, .nirvachan:after {
+display: block;
+content: '';
+clear: both;
+}
+
+.nirvachan {
+margin-bottom: 10px;
+}
+.assemballysankhya .regional {
+margin-bottom: 4px;
+}
+.assemballysankhya {
+margin-bottom: 10px;
+}
+
+.bhagsankhya .regional {
+margin-bottom: 4px;
+}
+
+@media  print
+{
+* {-webkit-print-color-adjust:exact;}
+}
+@page  { size: auto;  margin: 0mm; }
+@media  print {
+a[href]:after {
+    content: none !important;
+}
+}
+@media  print {
+.header, .hide { visibility: hidden }
+form.bootom-form{display:none;}
+}

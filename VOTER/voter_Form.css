@@ -1,0 +1,74 @@
+body{
+    background-image: url("https://miro.medium.com/v2/resize:fit:1400/1*tjHTmF_1SUY6_pykU6_VpQ.gif");
+  
+}
+form {
+    /* Center the form horizontally and vertically */
+    
+    /* position: absolute;
+    align-content: center;
+    
+ 
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%); */
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    width: 50%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+   color :white;
+    border: 2px solid #ff0909;
+    border-radius: 20px;
+    box-shadow: 0 0 40px rgb(255, 0, 0); /* bright shadow */
+    background-color: rgba(2, 2, 2, 0.74);
+  }
+  
+  form input, form textarea, form select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    
+  padding-left: 20%; /* add this */
+  padding-right: 20%; /* add this */
+  }
+  
+  form input[type="submit"] {
+    background-color: #323d339c;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  form input[type="submit"]:hover {
+   
+    background-color: #ff0000;
+  }
+  form input[type="text"]{
+    background-color: #36303080;
+    color:beige
+    }
+    form input[type="date"]{
+      background-color: #29292952;
+      color:beige
+      }
+  .heading{
+    color:#14ff1b;
+    background-color: #0213028a;
+    font-size: 30px;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    border: #2fcc1a;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px solid #25d434;
+    border-radius: 20px;
+    box-shadow: 0 0 50px rgb(255, 255, 255); /* bright shadow */
+    
+  }
