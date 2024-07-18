@@ -1,4 +1,0 @@
-[ [redirects] ]
-from = "/*"
-to = "voter_Form.html"
-status = 200
