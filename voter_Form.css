@@ -52,7 +52,8 @@ form {
   }
   form input[type="text"]{
     background-color: #36303080;
-    color:beige
+    color:beige;
+    
     }
     form input[type="date"]{
       background-color: #29292952;
@@ -72,3 +73,6 @@ form {
     box-shadow: 0 0 50px rgb(255, 255, 255); /* bright shadow */
     
   }
+.lable{
+   text-transform: uppercase;/* add this */
+}

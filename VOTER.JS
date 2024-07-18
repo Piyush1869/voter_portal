@@ -2,18 +2,46 @@ function openWindow() {
     var form = document.getElementById("myForm");
     
     
-  let nameInput = form.elements["name"].value;
+  let nameInput = form.elements["name"].value.toUpperCase();
   let nameInLocalInput = form.elements["name in hindi"].value;
   let imageInput = form.elements["image"].value;
-  let epicInput = form.elements["epic"].value;
+  let epicInput = form.elements["epic"].value.toUpperCase();
   let addressInput = form.elements["address in english"].value;
   let addressInputHindi = form.elements["address in hindi"].value;
-  let genderInput = form.elements["gender"].value;
-  let genderInputHindi = form.elements["gender in local"].value;
- let date = Date.now()
+//   let genderInput = form.elements["gender"].value;
+//   let genderInputHindi = form.elements["gender in local"].value;
+  // let date = Date.now()
   let relationInputs = form.elements["relation"];
   let selectedRelation;
 
+  let genderInput = form.elements["gender"];
+  let selectgender;
+  
+  for (var i = 0; i < genderInput.length; i++) {
+    if (genderInput[i].checked) {
+      selectgender = genderInput[i].value;
+      break;
+    }
+  }
+  let gender_eng = "";
+  let gender_hin = "";
+  if (selectgender === "1") {
+    gender_eng = "Female";
+    gender_hin = "महिला";
+  } else if (selectgender === "2") {
+    gender_eng = "Male";
+    gender_hin = "पुरुष";
+  }
+
+
+
+
+
+
+
+
+
+  
   for (var i = 0; i < relationInputs.length; i++) {
     if (relationInputs[i].checked) {
       selectedRelation = relationInputs[i].value;
@@ -35,7 +63,7 @@ function openWindow() {
   const yyyy = today.getFullYear();
   
   const formattedDate = `${dd}/${mm}/${yyyy}`;
-  let relation_name = form.elements["relation_name"].value;
+  let relation_name = form.elements["relation_name"].value.toUpperCase();
   let relation_name_hin = form.elements["relation_name_hin"].value;
   let part_number = form.elements["part_number"].value;
   let part_number_hin = form.elements["part_number_hin"].value;
@@ -115,7 +143,9 @@ font-weight: 600;
         left: 61px;
     
     }
-    
+    .value{
+     text-transform: capitalize;
+    }
     .epicnumber {
         position: absolute;
         top: 82px;
@@ -277,7 +307,7 @@ font-weight: 600;
                      <div class="secondpage">
                                        <div class="gender">
                             <span class="label">लिंग/Sex</span>
-                            <span class="value">: ${genderInputHindi} / ${genderInput}</span>
+                            <span class="value">: ${gender_eng} / ${gender_hin}</span>
     
                         </div>
                         
